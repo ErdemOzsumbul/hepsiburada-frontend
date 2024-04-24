@@ -1,0 +1,338 @@
+header {
+  padding: 1rem;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header-top ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.header-top ul li a {
+  color: rgba(128, 128, 128, 0.94);
+  text-decoration: none;
+  font-size: 0.7rem;
+  font-weight: 500;
+  width: max-content;
+  display: inline-block;
+}
+
+.header-top ul li a:hover {
+  opacity: 0.4;
+}
+
+.header-top ul li:nth-child(5) a {
+  color: red;
+}
+
+.header-top ul li:nth-child(7) a {
+  color: var(--mainColor);
+}
+
+.header-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.header-bottom .logo {
+  display: flex;
+  flex-direction: column;
+
+  cursor: pointer;
+}
+
+.header-bottom .logo img {
+  width: 190px;
+  object-fit: cover;
+}
+
+.header-bottom .logo span {
+  text-align: end;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.701);
+}
+
+.header-bottom .logo #premium {
+  color: var(--mainColor);
+}
+
+.header-bottom .search {
+  position: relative;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #919191;
+  border-radius: 7px;
+
+  overflow: hidden;
+}
+
+.header-bottom .search input {
+  padding: 0.7rem 0rem;
+  padding-left: 3.5rem;
+  flex: 4;
+  outline: none;
+  border: none;
+}
+
+.header-bottom .search input::placeholder {
+  opacity: 0.5;
+  font-size: 0.9rem;
+}
+
+.header-bottom .search .bi-search {
+  position: absolute;
+  left: 1rem;
+  font-size: 1.5rem;
+  color: rgba(128, 128, 128, 0.553);
+}
+
+.header-bottom .search button {
+  outline: none;
+  border: none;
+  flex: 1;
+  padding: 0.7rem 0rem;
+  background-color: #919191;
+  color: white;
+}
+
+.header-bottom .topButtons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0.2rem 0;
+  border-radius: 7px;
+}
+
+.header-bottom .topButtons i:first-child {
+  color: var(--mainColor);
+  font-size: 1.7rem;
+}
+
+.topButton-text {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+}
+
+.topButton-text span:first-child {
+  font-size: 0.9rem;
+}
+
+.topButton-text span:last-child {
+  font-size: 0.9rem;
+  color: var(--mainColor);
+  font-weight: 300;
+}
+
+.header-bottom .topButtons i:last-child {
+  margin-left: 1rem;
+  color: var(--mainColor);
+  font-size: 0.6rem;
+  margin-top: 20px;
+}
+
+.location {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.account {
+  padding: 0.2rem 0.7rem;
+  border: 2px solid grey;
+  background-color: transparent;
+
+  gap: 10px;
+}
+
+.location .loc-popup > .card > .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+  padding: 0.7rem 0.5rem 1rem 0.5rem;
+}
+
+.location .loc-popup > .card > .card-body p {
+  font-size: 0.7rem;
+  color: grey;
+  padding: 0;
+  margin: 0;
+}
+
+header
+  .header-bottom
+  .topButtons.location
+  .loc-popup
+  > .card
+  > .card-body
+  p:first-child {
+  font-size: 1rem;
+  color: black;
+}
+
+.location .loc-popup button {
+  background-color: var(--mainColor);
+  color: white;
+}
+
+.account i {
+  color: grey;
+}
+
+.account i:last-child {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+.account .topButton-text span:last-child {
+  color: black;
+  font-size: 0.6rem;
+  font-weight: 200;
+}
+
+.account .account-popup {
+  padding-top: 0;
+}
+
+.header-bottom .topButtons.account .account-popup .card {
+  padding: 0;
+  margin: 0;
+}
+
+.header-bottom .topButtons.account .account-popup .card .card-header {
+  background-color: #ffeae5;
+  display: flex;
+  flex-direction: column;
+}
+
+.account .account-popup .card .card-header .premiumlogo {
+  display: flex;
+  align-items: center;
+}
+
+.account .account-popup .card .card-header .premiumlogo img {
+  width: 100px;
+}
+
+.account .account-popup .card .card-header span {
+  font-weight: 200;
+}
+
+.account .account-popup .card .card-header .premiumBrandBox {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.account .account-popup .card .card-header .premiumBrandBox .preBrandImg {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  margin-right: 1rem;
+}
+
+.account .account-popup .card .card-header .premiumBrandBox span {
+  font-weight: bold;
+  color: rgb(35, 34, 34);
+}
+
+.header-bottom .topButtons.account .account-popup .card .card-body ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 0.5rem;
+}
+
+.topButtons.account .account-popup .card .card-body ul li a {
+  text-decoration: none;
+  color: rgb(106, 105, 105);
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.account .account-popup .card .card-body ul li a:hover {
+  color: rgba(106, 105, 105, 0.5);
+}
+
+.header-bottom .topButtons.chart {
+  padding: 0.3rem 1.2rem;
+  position: relative;
+  background-color: grey;
+}
+
+.header-bottom .topButtons.chart i {
+  color: white;
+}
+
+.header-bottom .topButtons.chart .topButton-text span {
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.notification {
+  position: absolute;
+  top: 6px;
+  left: 30px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid gray;
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 995px) {
+  .header-bottom .search {
+    display: none;
+  }
+  .chart.topButtons {
+    display: none;
+  }
+  .topButton-text {
+    display: none;
+  }
+  .account.topButtons {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100dvw;
+  }
+  .account.topButtons .bi.bi-dropdown {
+    display: none;
+  }
+  .location.topButtons {
+    display: none;
+  }
+  .header-top {
+    display: none;
+  }
+}

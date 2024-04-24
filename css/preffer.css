@@ -1,0 +1,70 @@
+.preffer {
+  width: 200px;
+  height: 362px;
+  background-size: cover;
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.5px solid rgb(229, 228, 228);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.preffer img {
+  border: none;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.preffer-star {
+  margin-top: -12px !important;
+}
+
+.preffer-star .bi-star {
+  background-color: #ff6000;
+}
+
+.preffer small {
+  color: white;
+  background-color: #ff6000;
+  border-radius: 3px;
+  padding: 2px;
+  margin: 0 auto;
+}
+
+.preffer p.h6 {
+  font-size: 1em;
+  margin-left: 12px;
+}
+
+.preffer .indirim {
+  color: #439e4a;
+  font-size: 0.9em;
+  margin-left: 12px;
+}
+
+.preffer:hover {
+  box-shadow: 0 0 5px 0.5px rgb(229, 228, 228);
+}
+
+.preffer .btn-basket {
+  opacity: 0;
+  pointer-events: none;
+}
+.preffer:hover .btn-basket {
+  opacity: 1;
+  pointer-events: all;
+}
+.btn-basket {
+  color: white;
+  background-color: #ff6000;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  font-size: 1em;
+  margin: 0 auto;
+  width: max-content;
+  cursor: pointer;
+  width: 100%;
+}

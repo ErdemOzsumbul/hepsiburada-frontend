@@ -1,0 +1,38 @@
+[
+  {
+    "imageSrc": "images/topProducts/topProd1.jpeg",
+    "productName": "Vivo Y22S 128 GB 6 GB Ram (Vivo Türkiye Garantili)",
+    "rating": 3,
+    "reviews": 176,
+    "price": 6455.0
+  },
+  {
+    "imageSrc": "images/topProducts/topProd3.jpeg",
+    "productName": "iPhone 11 128 GB",
+    "rating": 4,
+    "reviews": 521,
+    "price": 17199.99
+  },
+  {
+    "imageSrc": "images/topProducts/topProd2.jpeg",
+    "productName": "iPhone 11 64 GB",
+    "rating": 4,
+    "reviews": 103,
+    "price": 15999.0
+  },
+  {
+    "imageSrc": "images/topProducts/topProd5.jpeg",
+    "productName": "Smash Platform V3",
+    "rating": 3,
+    "reviews": 34,
+    "price": 1325.0
+  },
+  {
+    "imageSrc": "images/topProducts/topProd7.jpeg",
+    "productName": "Tefal EY5018 Easy Fry & Grill Classic Yağsız Fritöz Airfryer 4,2 Litre Kapasite Hava ile Kızartma & Izgara - 1510002076",
+    "rating": 4,
+    "reviews": 23,
+    "price": 3128.0,
+    "currency": "TL"
+  }
+]

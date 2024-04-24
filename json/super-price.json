@@ -1,0 +1,27 @@
+[
+  {
+    "productName": "Ipekyol Askili Crop Triko",
+    "imageSrc": "images/superPrice/ipekyolTriko.jpeg",
+    "price": "149,70 TL"
+  },
+  {
+    "productName": "adidas Breaknet Court Erkek Spor Ayakkabi",
+    "imageSrc": "images/superPrice/adidasBreak.jpeg",
+    "price": "949,00 TL"
+  },
+  {
+    "productName": "Jabra Elite 4",
+    "imageSrc": "images/superPrice/jabraElite4.jpeg",
+    "price": "949,00 TL"
+  },
+  {
+    "productName": "Fenruien Laptop Sirt Cantasi",
+    "imageSrc": "images/superPrice/fenruien.jpeg",
+    "price": "1.123,97 TL"
+  },
+  {
+    "productName": "Acer Nitro 5 AN515 Intel Core Laptop",
+    "imageSrc": "images/superPrice/acerNitro.jpeg",
+    "price": "18.999,00 TL"
+  }
+]

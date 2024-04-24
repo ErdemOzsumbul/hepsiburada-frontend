@@ -1,0 +1,168 @@
+.search-top {
+  color: rgb(63, 62, 62);
+  font-weight: bolder;
+  font-size: 1.75em;
+  margin-top: 50px;
+}
+
+.filter-top #ust {
+  flex-direction: column;
+}
+
+.filter-top #ust a {
+  text-decoration: none;
+  color: #5f5f5f;
+  font-size: 0.75em;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+.filter-top #ust .col {
+  justify-content: space-between;
+}
+
+.order-button {
+  background-color: white;
+  border: 1px solid rgb(234, 232, 232);
+  padding: 3px;
+}
+
+.order-button button,
+.order-button ul li .dropdown-item {
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+.order-button ul li .dropdown-item:hover {
+  color: #ff6000;
+}
+
+#filter-area {
+  border: 1px solid rgb(223, 222, 222);
+  border-radius: 8px;
+}
+
+#filter-area .row p {
+  margin: 10px;
+  font-size: 0.85em;
+}
+
+.check-list {
+  font-size: 0.85em;
+}
+
+.check-list::-webkit-scrollbar {
+  display: block;
+  width: 15px;
+}
+
+.check-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.radio-area input[type="text"] {
+  padding-left: 10px !important;
+  font-size: 0.65em;
+  margin: 0 4px;
+}
+
+.radio-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-area a {
+  padding-left: 10px;
+  font-size: 0.75em;
+  background-color: #c2c0c0;
+  border: none;
+}
+
+.kupon {
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-left: 12px;
+}
+
+.form-check input:checked {
+  background-color: #ff6000;
+  border-color: #ff6000;
+}
+
+.form-check .form-check-label {
+  padding-left: 2px;
+  font-size: 0.85em;
+}
+
+.form-check .form-check-input {
+  margin-left: -15px;
+}
+
+.form-check .form-check-label i {
+  color: rgb(254, 179, 75);
+}
+
+.bi-info-circle-fill {
+  font-size: 0.75em;
+}
+
+.radio-area a i {
+  font-size: 1.2rem;
+}
+
+.radio-area input[type="text"]:focus {
+  border-color: #ff6000;
+}
+
+.card i.bi-suit-heart {
+  left: 190px;
+  top: 10px;
+  background-color: rgb(232, 231, 231);
+
+  padding: 9px 9px 3px 9px;
+  border-radius: 50%;
+}
+
+.card-title {
+  font-size: 0.7em;
+  font-weight: bold;
+  color: white;
+  background-color: #ff6000;
+  width: fit-content;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.card-text {
+  font-size: 0.72em;
+}
+
+.card-body p i.bi-star-fill {
+  font-size: 0.72em;
+  margin: -1px;
+}
+
+.card-body p span {
+  font-size: 0.72em;
+  margin: 0 3px;
+  color: rgb(186, 177, 177);
+}
+
+.price {
+  font-size: 0.9em;
+  font-weight: bold;
+  margin: 0 3px;
+  color: rgb(34, 32, 32);
+  padding-bottom: 15px;
+}
+
+.card-body a {
+  display: flex;
+  justify-content: center;
+  background-color: #ff6000;
+  color: white;
+}
+
+.card {
+  margin-bottom: 20px;
+}

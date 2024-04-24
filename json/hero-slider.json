@@ -1,0 +1,32 @@
+[
+  {
+    "srcSmall": "images/hero/mini/hero-1.jpg",
+    "srcLarge": "images/hero/large/hero-1.jpg",
+    "title": "Tüm ihtiyaçlarını hemen al",
+    "subtitle": "peşin fiyatına 12 taksitle öde*"
+  },
+  {
+    "srcSmall": "images/hero/mini/hero-2.jpg",
+    "srcLarge": "images/hero/large/hero-2.jpg",
+    "title": "Bilgisayar ekipmanlarında",
+    "subtitle": "çok konuşturan fırsatlar"
+  },
+  {
+    "srcSmall": "images/hero/mini/hero-3.jpg",
+    "srcLarge": "images/hero/large/hero-3.jpg",
+    "title": "Teknolojik ürünlerde",
+    "subtitle": "1.000 TL'ye varan kupon fırsatı"
+  },
+  {
+    "srcSmall": "images/hero/mini/hero-4.jpg",
+    "srcLarge": "images/hero/large/hero-4.jpg",
+    "title": "Oyuncu bilgisayarlarında ve ekipmanlarında",
+    "subtitle": "fırsatı  yakala"
+  },
+  {
+    "srcSmall": "images/hero/mini/hero-5.jpg",
+    "srcLarge": "images/hero/large/hero-5.jpg",
+    "title": "Aradığın beyaz eşyalarda",
+    "subtitle": "sepete %10 net indirim"
+  }
+]
