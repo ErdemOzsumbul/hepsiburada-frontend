@@ -8,6 +8,12 @@ search.onclick = async () => {
   window.location.href = "/pages/search/index.html?search=" + searchInput.value;
 };
 
+document.addEventListener("keypress", (key) => {
+  if (key.code != "Enter") return;
+  if (!searchInput.value || searchInput.value.length < 2) return;
+  window.location.href = "/pages/search/index.html?search=" + searchInput.value;
+});
+
 function createCard(product, containerId) {
   const productCard = document.createElement("div");
   productCard.style.cursor = "pointer";
