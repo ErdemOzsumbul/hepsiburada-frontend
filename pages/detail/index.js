@@ -19,7 +19,9 @@
     price.textContent = formatter.format(res.data.price) + " TL";
     model.textContent = res.data.model;
     image.src =
-      "http://localhost:3000" + "/api/picture/?filename=" + res.data.src;
+      "https://hepsiburada-backend-erdemozsumbul.vercel.app" +
+      "/api/picture/?filename=" +
+      res.data.src;
     point.textContent = res.data.sellerPoints;
     tax.textContent = formatter.format(res.data.price / 12) + " TL";
     rating.textContent = res.data.starRating.toFixed(1);

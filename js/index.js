@@ -1,4 +1,4 @@
-axios.defaults.baseURL = "http://localhost:3000";
+axios.defaults.baseURL = "https://hepsiburada-backend-erdemozsumbul.vercel.app";
 
 const search = document.getElementById("search-btn");
 const searchInput = document.getElementById("search-input");
@@ -18,7 +18,10 @@ function createCard(product, containerId) {
 
   const img = document.createElement("img");
 
-  img.src = "http://localhost:3000" + "/api/picture/?filename=" + product.src;
+  img.src =
+    "https://hepsiburada-backend-erdemozsumbul.vercel.app" +
+    "/api/picture/?filename=" +
+    product.src;
   img.classList.add("img-fluid", "img-thumbnail");
   img.alt = "preffer1";
   productCard.appendChild(img);
@@ -110,7 +113,10 @@ function createProductCard(product, containerId) {
   card.appendChild(heartIcon);
 
   const img = document.createElement("img");
-  img.src = "http://localhost:3000" + "/api/picture/?filename=" + product.src;
+  img.src =
+    "https://hepsiburada-backend-erdemozsumbul.vercel.app" +
+    "/api/picture/?filename=" +
+    product.src;
   img.classList.add("card-img-top");
   card.appendChild(img);
 

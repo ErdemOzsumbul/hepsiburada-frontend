@@ -18,7 +18,10 @@
     const imageContainer = document.createElement("div");
     imageContainer.classList.add("prodCardImage");
     const image = document.createElement("img");
-    image.src = "http://localhost:3000" + "/api/picture/?filename=" + item.src;
+    image.src =
+      "https://hepsiburada-backend-erdemozsumbul.vercel.app" +
+      "/api/picture/?filename=" +
+      item.src;
     imageContainer.appendChild(image);
     productCard.appendChild(imageContainer);
 
