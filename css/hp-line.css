@@ -10,6 +10,8 @@
 
 .hp-lines .line:nth-child(1) {
   background: #ff6000;
+  width: 15%;
+  flex: auto;
 }
 
 .hp-lines .line:nth-child(2) {

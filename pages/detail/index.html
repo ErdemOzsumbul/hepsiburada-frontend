@@ -4,33 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg" href="../../images/logo.svg" />
+    <link rel="icon" type="image/ico" href="../../favicon.ico" />
     <title>HB | Details</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-TKdB7/MuKzKjQ8ZvGEKxbmJdq+1lCcXd1mK6mX9zOGdyoXYUPnBUwxdTZ8q3J/6B+U6p/HeWkSVNjJ5d5rQI5Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="detail.css" />
     <link rel="stylesheet" href="../../common.css" />
     <link rel="stylesheet" href="../../css/index.css" />
     <link rel="stylesheet" href="../../css/header.css" />
     <link rel="stylesheet" href="../../css/hp-line.css" />
     <link rel="stylesheet" href="../../css/footer.css" />
+    <link rel="stylesheet" href="../../css/preffer.css" />
   </head>
-
   <body>
     <div class="container">
       <header>
@@ -52,7 +45,11 @@
             <span> <span id="premium">Premium'u</span>keşfet</span>
           </a>
           <div class="search">
-            <input type="text" placeholder="Ürün,  kategori veya marka ara" />
+            <input
+              type="text"
+              placeholder="Ürün,  kategori veya marka ara"
+              id="search-input"
+            />
             <i class="bi bi-search"></i>
             <button id="search-btn">ARA</button>
           </div>
@@ -91,315 +88,77 @@
       <div class="line"></div>
       <div class="line"></div>
     </div>
-
+    <div style="background: #f5f5f5">
+      <div class="container categories">
+        <ul>
+          <li><a href="#">Elektronik</a></li>
+          <li><a href="#">Moda</a></li>
+          <li><a href="#">Ev, Yaşam, Kırtasiye, Ofis</a></li>
+          <li><a href="#">Oto, Bahçe, Yapı Market</a></li>
+          <li><a href="#">Anne, Bebek, Oyuncak</a></li>
+          <li><a href="#">Spor, Outdoor</a></li>
+          <li><a href="#">Kozmetik, Kişisel Bakım</a></li>
+          <li><a href="#">Süpermarket, Pet Shop</a></li>
+          <li><a href="#">Kitap, Müzik, Film, Hobi</a></li>
+        </ul>
+      </div>
+    </div>
     <!-- content -->
     <div id="filter-main" class="container-fluid">
       <div class="container filter-top mt-3">
-        <div class="row justify-content-center align-items-end g-2">
-          <div class="row border rounded-3 mt-3">
-            <div class="col-6">
+        <div class="row justify-content-center align-items-end gap-2">
+          <div class="d-lg-flex border rounded-3 mt-3 p-0">
+            <div class="col-12 col-lg-6">
               <div class="row justify-content-center align-items-center g-2">
                 <div class="col">
-                  <div
-                    id="carouselExampleDark"
-                    class="carousel carousel-dark slide"
-                  >
+                  <div class="carousel carousel-dark slide">
                     <img
-                      src="images/intel-core-i5-logo.jpeg"
-                      style="top: 542px; left: 0; z-index: 2"
-                      width="50px"
-                      class="position-absolute"
-                      alt=""
+                      src="images/slider10.jpeg"
+                      class="w-100"
+                      id="product-image"
                     />
-                    <div class="carousel-indicators">
+                    <button class="carousel-control-prev" style="opacity: 1">
                       <div
-                        class="card active"
-                        style="width: 80px"
-                        type="button"
+                        class="bg-white d-flex justify-content-center align-items-center rounded-circle p-2 shadow"
                       >
-                        <img
-                          src="images/slider1.jpeg"
-                          class="img-thumbnail"
-                          data-bs-slide-to="0"
-                          alt="slider1"
-                          data-bs-target="#carouselExampleDark"
-                        />
+                        <span class="carousel-control-prev-icon"></span>
                       </div>
-
-                      <div
-                        class="card active"
-                        style="width: 80px"
-                        type="button"
-                      >
-                        <img
-                          src="images/slider2.jpeg"
-                          class="img-thumbnail"
-                          data-bs-slide-to="1"
-                          alt="slider2"
-                          data-bs-target="#carouselExampleDark"
-                        />
-                      </div>
-                      <div
-                        class="card active"
-                        style="width: 80px"
-                        type="button"
-                      >
-                        <img
-                          src="images/slider3.jpeg"
-                          class="img-thumbnail"
-                          data-bs-slide-to="2"
-                          alt="slider3"
-                          data-bs-target="#carouselExampleDark"
-                        />
-                      </div>
-                      <div
-                        class="card active"
-                        style="width: 80px"
-                        type="button"
-                      >
-                        <img
-                          src="images/slider4.jpeg"
-                          class="img-thumbnail"
-                          data-bs-slide-to="3"
-                          alt="slider4"
-                          data-bs-target="#carouselExampleDark"
-                        />
-                      </div>
-                      <div
-                        class="card active"
-                        style="width: 80px"
-                        type="button"
-                      >
-                        <img
-                          src="images/slider5.jpeg"
-                          class="img-thumbnail"
-                          data-bs-slide-to="4"
-                          alt="slider5"
-                          data-bs-target="#carouselExampleDark"
-                        />
-                      </div>
-                      <div
-                        class="card active"
-                        style="width: 80px"
-                        type="button"
-                      >
-                        <img
-                          src="images/slider6.jpeg"
-                          class="img-thumbnail"
-                          data-bs-slide-to="5"
-                          alt="slider6"
-                          data-bs-target="#carouselExampleDark"
-                        />
-                      </div>
-                      <div
-                        class="card active"
-                        style="width: 80px"
-                        type="button"
-                      >
-                        <img
-                          src="images/slider7.jpeg"
-                          class="img-thumbnail"
-                          data-bs-slide-to="6"
-                          alt="slider7"
-                          data-bs-target="#carouselExampleDark"
-                        />
-                      </div>
-                      <div
-                        class="card active"
-                        style="width: 80px"
-                        type="button"
-                      >
-                        <img
-                          src="images/slider8.jpeg"
-                          class="img-thumbnail"
-                          data-bs-slide-to="7"
-                          alt="slider8"
-                          data-bs-target="#carouselExampleDark"
-                        />
-                      </div>
-                      <div
-                        class="card active"
-                        style="width: 80px"
-                        type="button"
-                      >
-                        <img
-                          src="images/slider9.jpeg"
-                          class="img-thumbnail"
-                          data-bs-slide-to="8"
-                          alt="slider9"
-                          data-bs-target="#carouselExampleDark"
-                        />
-                      </div>
-                      <div
-                        class="card active"
-                        style="width: 80px"
-                        type="button"
-                      >
-                        <img
-                          src="images/slider10.jpeg"
-                          class="img-thumbnail"
-                          data-bs-slide-to="9"
-                          alt="slider10"
-                          data-bs-target="#carouselExampleDark"
-                        />
-                      </div>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img
-                          src="images/slider1.jpeg"
-                          class="d-block w-100 mb-5"
-                          alt="slider1"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="images/slider2.jpeg"
-                          class="d-block w-100 mb-5"
-                          alt="slider2"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="images/slider3.jpeg"
-                          class="d-block w-100 mb-5"
-                          alt="slider3"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="images/slider4.jpeg"
-                          class="d-block w-100 mb-5"
-                          alt="slider4"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="images/slider5.jpeg"
-                          class="d-block w-100 mb-5"
-                          alt="slider5"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="images/slider6.jpeg"
-                          class="d-block w-100 mb-5"
-                          alt="slider6"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="images/slider7.jpeg"
-                          class="d-block w-100 mb-5"
-                          alt="slider7"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="images/slider8.jpeg"
-                          class="d-block w-100 mb-5"
-                          alt="slider8"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="images/slider9.jpeg"
-                          class="d-block w-100 mb-5"
-                          alt="slider9"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="images/slider10.jpeg"
-                          class="d-block w-100 mb-5"
-                          alt="slider10"
-                        />
-                      </div>
-                    </div>
-                    <button
-                      class="carousel-control-prev"
-                      type="button"
-                      data-bs-target="#carouselExampleDark"
-                      data-bs-slide="prev"
-                    >
-                      <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span class="visually-hidden">Previous</span>
                     </button>
-                    <button
-                      class="carousel-control-next"
-                      type="button"
-                      data-bs-target="#carouselExampleDark"
-                      data-bs-slide="next"
-                    >
-                      <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span class="visually-hidden">Next</span>
+                    <button class="carousel-control-next" style="opacity: 1">
+                      <div
+                        class="bg-white d-flex justify-content-center align-items-center rounded-circle p-2 shadow"
+                      >
+                        <span class="carousel-control-next-icon"></span>
+                      </div>
                     </button>
                   </div>
                 </div>
               </div>
               <!--Slider end-->
-              <hr />
-              <div class="row justify-content-center align-items-center g-2">
-                <div class="col-6 d-flex justify-content-around ozellik mb-5">
-                  <div class="col-5 d-inline ozellik-baslik">
-                    <div><strong>Ekran Kartı Hafızası</strong></div>
-                    <div><strong>İşletim Sistemi</strong></div>
-                    <div><strong>İşlemci Tipi</strong></div>
-                    <div><strong>Ekran Boyutu</strong></div>
-                  </div>
-                  <div class="col-5 d-inline ozellik-aciklama">
-                    <div>Paylaşımlı</div>
-                    <div>Yok (Free Dos)</div>
-                    <div>Intel Core 5</div>
-                    <div>15,6 inç</div>
-                  </div>
-
-                  <div class="col-5 d-inline ozellik-baslik">
-                    <div><strong>Harddisk Kapasitesi</strong></div>
-                    <div><strong>İşlemci</strong></div>
-                    <div><strong>Ram (Sistem Belleği)</strong></div>
-                    <div><strong>Ekran Kartı</strong></div>
-                  </div>
-                  <div class="col-5 d-inline ozellik-aciklama">
-                    <div>Yok</div>
-                    <div>1155G7</div>
-                    <div>8 GB</div>
-                    <div>Paylaşımlı</div>
-                  </div>
-                </div>
-              </div>
             </div>
-            <div class="col-6 d-flex sag-ozellik p-3">
-              <div class="row justify-content-start align-items-start">
-                <div class="col-12">
+            <div class="col-12 col-lg-6 d-flex p-3" style="background: #f5f5f5">
+              <div class="row justify-content-start align-items-start w-100">
+                <div class="col-12 d-flex gap-3 flex-column">
                   <div>
                     <p>
-                      <strong
-                        >Lenovo Ideapad 3 Intel Core i5 1155G7 8GB 512GB SSD
-                        Freedos 15.6" FHD Taşınabilir Bilgisayar
-                        82H8034ETX</strong
-                      >
+                      <strong id="product-name">Bilinmiyor</strong>
                       <br />
                       <small class="text-primary"
-                        ><strong>Lenovo</strong></small
+                        ><strong id="product-model">Bilinmiyor</strong></small
                       >
                     </p>
                   </div>
                   <div class="d-flex justify-content-between">
-                    <p class="h2"><strong>11.899,00 TL</strong></p>
-                    <p>
-                      <span>4,8</span>
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <i class="bi bi-star-fill text-warning"></i>
+                    <p class="h2">
+                      <strong id="product-price">0,00 TL</strong>
+                    </p>
+                    <p id="product-stars">
+                      <span id="product-rating">Bilinmiyor</span>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
                     </p>
                   </div>
                   <div
@@ -407,17 +166,15 @@
                   >
                     <a href="#" class="ozellik-link">
                       <p class="h6">
-                        1044 TL x 12 aya varan <strong>Taksitle</strong>
+                        <strong id="product-tax">0.00</strong> TL x 12 aya varan
+                        <strong>Taksitle</strong>
                       </p>
-                    </a>
-                    <a href="#" class="ozellik-link">
-                      <p><strong>125 Değerlendirme</strong></p>
                     </a>
                   </div>
                   <div class="d-flex">
-                    <a href="#" class="ozellik-link d-flex">
+                    <a href="#" class="d-flex">
                       <img
-                        src="images/premium.png"
+                        src="../../images/premium.png"
                         width="50px"
                         height="20px"
                         alt=""
@@ -430,78 +187,64 @@
                     </a>
                   </div>
                   <div class="d-flex">
-                    <div class="d-flex justify-content-start">
-                      <p class="ozel-alan">
+                    <div
+                      class="d-flex justify-content-center justify-content-lg-start w-100 gap-2"
+                    >
+                      <p class="m-0 bg-white p-2 rounded border shadow">
                         Satıcı:
                         <a href="#" class="text-primary mx-1">
-                          iyifiyatburada1</a
+                          Erdem Özsümbül</a
                         >
                         |
-                        <a
-                          href="#"
-                          class="ozellik-link mx-1"
-                          data-bs-toggle="popover"
-                          data-bs-placement="right"
-                          data-bs-content="Satıcı puanı, Hepsiburada.com müşterileri tarafından verilen zamanında gönderim, 
-                                                paketleme ve genel alışveriş deneyimi puanlarına göre hesaplanmaktadır.
-                                                Tüm siparişler Hepsiburada güvencesi altındadır.
-                                                Değerlendirmeler son 6 ay içerisinde yapılan değerlendirme sayısını vermektedir."
-                          data-bs-trigger="focus"
-                        >
-                          Puan <small class="mx-1">9,3</small>
+                        <a href="#">
+                          Puan:
+                          <small class="mx-1" id="product-seller-point"
+                            >0,00</small
+                          >
                           <i class="bi bi-question-circle"></i>
                         </a>
                       </p>
-                      <a href="#" class="btn btn-outline-secondary"
-                        >Satıcıya Sor(4)</a
+                      <a
+                        href="#"
+                        class="btn btn-outline-secondary p-1"
+                        style="height: max-content"
+                        >Satıcıya Sor</a
                       >
                     </div>
                   </div>
-                  <div class="col-4 variant">
-                    <img class="col-1" src="images/bilg1.jpeg" alt="bilg1" />
-                    <div>
-                      <span>Gri</span>
-                      <p class="h6"><strong>11.899,00 TL</strong></p>
-                    </div>
-                  </div>
                   <div>
-                    <div class="clear-fix"></div>
-                    <div
-                      class="row justify-content-center align-items-center g-2"
-                    >
-                      <div class="col miktar">
-                        <div
-                          class="btn-group my-3"
-                          role="group"
-                          aria-label="Basic outlined example"
-                        >
+                    <div class="row justify-content-center align-items-center">
+                      <div
+                        class="col d-flex justify-content-center justify-content-lg-start gap-2"
+                      >
+                        <div class="btn-group">
                           <button type="button" class="btn btn-secondary">
                             <strong>-</strong>
                           </button>
                           <input
                             type="text"
-                            name="txtAdet"
-                            id="adet"
                             readonly
                             placeholder="1 Adet"
+                            style="width: 60px"
                           />
                           <button type="button" class="btn btn-secondary">
                             <strong>+</strong>
                           </button>
                         </div>
-                        <button
-                          id="sepet-ek"
-                          type="button"
-                          class="btn btn-secondary"
-                        >
-                          <strong
-                            ><i class="bi bi-cart4 mx-2"></i>Sepete Ekle</strong
-                          >
-                        </button>
+                        <div>
+                          <button class="btn-basket">
+                            <strong
+                              ><i class="bi bi-cart4 mx-2"></i>Sepete
+                              Ekle</strong
+                            >
+                          </button>
+                        </div>
                       </div>
                     </div>
 
-                    <div class="col2 d-flex justify-content-start like-area">
+                    <div
+                      class="col2 d-flex justify-content-center justify-content-lg-start"
+                    >
                       <div>
                         <i class="bi bi-suit-heart mx-2"></i><span>Beğen</span>
                       </div>
@@ -529,141 +272,6 @@
     <!-- content -->
     <footer>
       <div class="container">
-        <div class="footer-description" id="footerdesc">
-          <p>
-            <strong>Alışveriş Fırsatları</strong> <br />
-            Alışveriş fırsatlarıTürkiye'nin en büyük online alışveriş sitesi
-            Hepsiburada, 2001 yılından bu yana hizmet veriyor. Doğan Holding
-            bünyesinde faaliyet gösteren Hepsiburada, yenilikleri ile
-            Türkiye'nin dijital alışveriş sektörüne yön veriyor. Online
-            alışveriş deneyimini her geçen gün daha kolay hale getiren,
-            dijitalleşen dünyanın gereklerine uygun geliştirmelerle sunduğu
-            hizmetleri daha da avantajlı kılan Hepsiburada, ziyaretçilerine bol
-            çeşit, uygun fiyat, hızlı teslimat ve sürpriz indirimler sunuyor.
-            Bugün 35'ten fazla kategori içinde 20 milyondan fazla ürün çeşidi
-            bulunduran site, 16 milyondan fazla üye ile Türkiye'de e-ticaretin
-            lideri olmanın gururunu yaşıyor.<span id="more"
-              ><strong>Devamını Gör</strong></span
-            >
-          </p>
-
-          <p>
-            <strong>Teknolojnin En İyi Markaları Hepsiburada'da</strong> <br />
-            Hepsiburada'un avantajlarla sunduğu elektronik ürünler içinde
-            bilgisayar modellerinden cep telefonu ürünlerine, bluetooth kulaklık
-            tasarımlarından laptop seçeneklerine, tablet çeşitlerinden akıllı
-            saat ürünlerine kadar birçok alternatif yer alıyor. En iyi teknoloji
-            markaları, özel ürünleri ve avantajlı ödeme seçenekleri ile
-            Hepsiburada'da müşterilerle buluşuyor. Dünyanın en ünlü elektronik
-            markalarından Apple iPhone, Huawei, Samsung ve Xiaomi telefon
-            modelleri, beyaz eşyanın gözdeleri çamaşır ve bulaşık makineleri,
-            küçük ev aletleri sitede sizleri bekliyor. Arnica süpürgelerden
-            Hisar Tencere setlerine, Fakir mikser de dahil olmak üzere evinizin
-            ihtiyacı bir çok seçenek Hepsiburada'da. Hayatı kolaylaştıran en iyi
-            klima modelleri, sıcacık kışlar için soba ve UFO ısıtıcı çeşitleri
-            de elektronikler içinde yer alıyor. Ayrıca PlayStation ve benzeri
-            oyun konsolu alternatifleri ile en popüler konsol oyunları da
-            oyunseverleri bekliyor.
-          </p>
-
-          <p>
-            <strong>Modanın Nabzını Tutan Tasarımlar Bir Arada</strong> <br />
-            Hepsiburada modayı yakından takip edenlerin de gözdesi.Hepsimoda
-            kategorisinde kadın, erkek, çocuk ve bebek kıyafetlerinin yanı sıra
-            ayakkabı, çanta ve aksesuarları sunan site, moda trendlerini
-            kullanıcılarına sunuyor. Giyim ihtiyaçlarını en trend ürünleri
-            sunarak karşılayan Hepsiburada, günlük giyim alternatiflerinden
-            abiyelere, spor giyimden ofis kıyafetlerine kadar farklı ihtiyaçlar
-            için çeşit vadediyor. Türkiye'nin ve dünyanın sevilen giyim
-            markaları en yeni ürünleriyle sezon modasını gardırobunuza taşıyor.
-            Kışlık kadın kaban seçeneklerinden kazaklara, kadın çizme
-            tasarımlarından topuklu ayakkabı modellerine, tesettür giyim
-            ürünlerinden abiye elbise tasarımlarına kadar aradığınız her şeyi
-            Hepsimoda'da bulabilirsiniz. Hepsiburada'nın her bütçeye, her zevke
-            uygun giyim ürünleri arasından hem kendi ihtiyaçlarınızı
-            karşılayabilir hem de sevdiklerinize hediye alabilirsiniz. Kadın
-            ayakkabı ve erkek spor ayakkabı modellerinde zengin ürün yelpazesi
-            sunan Hepsiburada, çocukların ihtiyaçları için de doğru adres.
-          </p>
-
-          <p>
-            <strong>Evinizi ve İş Yerinizi Baştan Yaratın</strong> <br />
-            Eviniz ve ofisiniz için ihtiyaç duyduğunuz her şeyi bir arada
-            bulabileceğiniz Hepsiburada aracılığıyla ev dekorasyon ve ofis
-            dekorasyon ürünlerinden ev tekstili tasarımlarına, kırtasiye
-            malzemelerinden okul alışverişi için gerekli olan defter ve
-            kalemlere kadar her şeyi sipariş verebilirsiniz.Ofis kırtasiye
-            gereçlerini hem kendiniz hem de çocuklarınız ve sevdikleriniz için
-            alabilirsiniz. Evinizi baştan yaratacak mobilyalardan çocuklarınıza
-            resim yapmayı sevdirecek renkli kalemlere kadar her şeyiHepsiburada
-            avantajlarıyla bulabilirsiniz.
-          </p>
-          <p>
-            <strong>Aradığınız Yapı Ürünleri Burada</strong> <br />
-            Yapı market ihtiyaçlarınızı birkaç tık ile karşılayabilir, lastik
-            modellerinden otomotiv parçalarına, hırdavat ve nalbur ürünlerinden
-            bahçe gereklerine kadar her şeyi kolaylıkla sipariş edebilirsiniz.
-            Arabanız için tampon arıyor veya sadece bir jant veya araç içi
-            paspas almak istiyor olabilirsiniz, adresiniz aynı. Hepsiburada,
-            büyük küçük tüm ihtiyaçlarınız için hizmetinizde. Kış lastiği mi
-            almanız gerek, aradığınız dünyaca ünlü markalar avantajlarla
-            kapınızda. Petlas lastik ürünleri, Bridgestone lastik alternatifleri
-            aracınıza uygun çeşitlerle seçimi size bırakıyor.Dilerseniz Pirelli
-            lastik, Lassa lastik ya da Michelin lastik seçeneklerini de
-            değerlendirebilirsiniz. Hepsiburada, sürüş deneyiminizi maksimum
-            rahatlığa ulaştıracak navigasyon sistemleri, araç radyoları ve TV
-            ekranlarını da geniş ürün gamında bulunduruyor.
-          </p>
-
-          <p>
-            <strong>Annelerin de Çocukların da Gözdesi</strong> <br />
-            Annelerin ve anne adaylarının ihtiyaçlarına yanıt veren ürünler
-            arasında ana kucağı, emzik, biberon, bebek arabası, bebek bakımı
-            ürünleri ve çeşit çeşit oyuncak yer alıyor.Anne babaların hayat
-            kolaylaştırmak üzere tasarlanan ürünlerden, siz de çocuğunuz ve
-            kendiniz için en iyisini sipariş verebilirsiniz. Bebeklikten
-            çocukluğu ve ergenliğe kadar çocuklar için yaşa özel ürünler,
-            Hepsiburada'da bir arada bulunuyor. Hepsiburada, Prima bebek bezi
-            veya Huggies bebek bezi çeşitlerini avantajlı kampanyalarla
-            Hepsiburada'da bulabilir, farklı ürünleri kıyaslayabilir, seçiminizi
-            yapabilirsiniz.
-          </p>
-
-          <p>
-            <strong>Sporu Sevdiren Tasarımlar</strong> <br />
-            Spora hayatında yer açmak isteyenlerin seçimi olan Spor & Outdoor
-            kategorisi, hem kadın hem de erkeklerin farklı branşlar için ihtiyaç
-            duyacağı malzemeleri ve spor giyim ürünlerini bir arada
-            bulunduruyor. Tenis, yürüyüş, koşu veya takım oyunları için gerek
-            duyduğunuz tüm spor ekipmanları Hepsiburada'da sizleri bekliyor.
-            Elektrikli bisikletten olta kamışına, ilgilendiğiniz spor dalında
-            performansınızı artırmak için profesyonel ürünlerden destek
-            alabilirsiniz. Outdoor mont ve outdoor ayakkabı tasarımlarını doğa
-            sporları yaparken ya da yağışlı kış günlerinde tercih edebilirsiniz.
-            Kamp için aradığınız çadır modelleri, koşu için almak istediğiniz
-            spor ayakkabı tasarımları, pilates seanslarınıza konfor katan matlar
-            tek reyonda sizlerle...
-          </p>
-
-          <p>
-            <strong>Bakımlı Olmak İçin Aradığınız Her Şey</strong> <br />
-            Kadın ve erkeklerin kişisel bakım rutinini kolaylaştıracak binlerce
-            ürün bir arada. Cilt temizleyici kozmetik ürünlerden sağlık
-            araçlarına, hayatınıza güzellik katacak makyaj malzemelerinden
-            parfüm ve deodorantlara kadar banyo dolabınızın tüm ihtiyaçlarını
-            Hepsiburada ayrıcalıklarıyla satın alabilirsiniz. Hepsiburada, cilt
-            tipinize uygun alternatifler, bütçenizi sarsmayan çeşitler, en
-            kaliteli ve seçkin markalar ile sizin de güzellik sırrınız olmaya
-            hazırlanıyor. Calvin Klein parfüm çeşitleri içinde aradığınız kokuyu
-            bulabilirsiniz. Bulgari parfüm çeşitlerini inceleyebilir veya
-            ünlülerin tercihi Chanel parfüm seçenekleri arasından seçim yaparak
-            imzanız olacak parfüme sahip olabilirsiniz.<br />
-            <span id="less">
-              <strong>Devamını Gizle</strong>
-            </span>
-          </p>
-        </div>
-
         <div class="footer-features-body">
           <div class="footer-features">
             <div class="footerFeatures-images">
@@ -901,7 +509,7 @@
             <span>Mobil Uygulamalar</span>
             <div class="mobileAppBox">
               <div class="mobileApp-text">
-                <i class="bi bi-phone"></i>
+                <i class="bi bi-apple"></i>
                 <div class="mb-app-spans">
                   <span>APP STORE'dan</span>
                   <span>İNDİREBİLİRSİNİZ</span>
@@ -916,7 +524,7 @@
                 </div>
               </div>
               <div class="mobileApp-text">
-                <i class="bi bi-apple"></i>
+                <i class="bi bi-phone"></i>
                 <div class="mb-app-spans">
                   <span>APP GALLERY'den</span>
                   <span>İNDİREBİLİRSİNİZ</span>
@@ -943,7 +551,7 @@
             </div>
           </div>
         </div>
-        <div class="container justify-content-between d-flex gap-5">
+        <div class="container justify-content-around d-flex gap-5">
           <div class="d-flex gap-3 flex-wrap" id="bank-logos-content">
             <!-- async bank logos data -->
           </div>
@@ -972,15 +580,17 @@
         </div>
       </div>
       <div style="background: #000; color: #fff" class="p-3">
-        <div class="container d-flex justify-content-between">
+        <div
+          class="container d-flex justify-content-between gap-2 flex-column flex-lg-row"
+        >
           <div class="info-text">
-            <p>
+            <p class="text-center">
               Her şey ayağına gelsin! © Copyright 1998 - 2023 D-MARKET
               Elektronik Hizmetler Tic. A.Ş. Her Hakkı Saklıdır.
             </p>
             <span>Hepsiburada.com, Bir Doğan Online Markasıdır.</span>
           </div>
-          <div class="d-flex gap-2">
+          <div class="d-flex gap-3 justify-content-center">
             <div class="certificateImageBox">
               <img src="../../images/accessibility/dol.svg" alt="" />
             </div>
@@ -994,15 +604,14 @@
         </div>
       </div>
     </footer>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="../../js/footer.js"></script>
-    <script src="../../js/banklogos.js"></script>
     <script src="../../js/index.js"></script>
+    <script src="index.js"></script>
+    <script src="../../js/banklogos.js"></script>
   </body>
 </html>

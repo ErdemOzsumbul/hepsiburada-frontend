@@ -1,9 +1,9 @@
 (async () => {
-  const res = await axios.get("/json/banklogos.json");
+  const res = await axios.get(window.location.origin + "/json/banklogos.json");
 
   function createCard(product) {
     const img = document.createElement("img");
-    img.src = product.imageSrc;
+    img.src = product.src;
     img.classList.add("img-fluid");
     img.height = product.height;
     img.width = product.width;

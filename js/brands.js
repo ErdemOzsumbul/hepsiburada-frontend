@@ -1,12 +1,12 @@
 (async () => {
-  const res = await axios.get("/json/brands.json");
+  const res = await axios.get(window.location.origin + "/json/brands.json");
 
   function createCard(product) {
     const productCard = document.createElement("div");
     productCard.classList.add("brandsBox");
 
     const img = document.createElement("img");
-    img.src = product.imageSrc;
+    img.src = product.src;
     img.classList.add("img-fluid", "img-thumbnail");
     productCard.appendChild(img);
 

@@ -4,18 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg" href="../../images/logo.svg" />
+    <link rel="icon" type="image/ico" href="../../favicon.ico" />
     <title>HB | Search</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-TKdB7/MuKzKjQ8ZvGEKxbmJdq+1lCcXd1mK6mX9zOGdyoXYUPnBUwxdTZ8q3J/6B+U6p/HeWkSVNjJ5d5rQI5Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
@@ -23,7 +16,7 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="search.css" />
+    <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="../../common.css" />
     <link rel="stylesheet" href="../../css/index.css" />
     <link rel="stylesheet" href="../../css/header.css" />
@@ -52,7 +45,11 @@
             <span> <span id="premium">Premium'u</span>keşfet</span>
           </a>
           <div class="search">
-            <input type="text" placeholder="Ürün,  kategori veya marka ara" />
+            <input
+              type="text"
+              placeholder="Ürün,  kategori veya marka ara"
+              id="search-input"
+            />
             <i class="bi bi-search"></i>
             <button id="search-btn">ARA</button>
           </div>
@@ -95,42 +92,21 @@
     <!-- content -->
     <div id="filter-main" class="container-fluid p-3">
       <div class="container">
-        <div id="filter" class="d-flex">
-          <div id="filter-area" >
+        <div id="filter" class="d-flex gap-4 flex-column flex-lg-row">
+          <div id="filter-area">
             <div class="d-flex flex-column">
               <div class="d-flex flex-column p-3">
-                <p style="width: max-content;"><strong>Seçili Filtreler</strong> (1)</p>
-                <a href="#" class="btn text-center d-flex justify-content-center border rounded-5">
-                  <div class="d-flex flex-column">
-                    <span>Marka</span> 
-                    <strong>Lenovo</strong>
-                  </div>
-                  <i class="bi bi-x-lg"></i>
-                </a>
-                <a href="#" class="temizle">Temizle</a>
-              </div>
-              <div class="d-flex flex-column p-3 border-top">
                 <p><strong>Şehir</strong></p>
-                <div class="position-relative" style="display: flex;
-                justify-content: flex-end;align-items: center;">
-                  <input
-                    type="text"
-                    class="form-control position-relative"
-                    name=""
-                    id=""
-                    placeholder="Filtrele"
-                  />
-                  <i class="bi bi-search position-absolute p-2"></i>
-                </div>
-                <div class="check-list">
+
+                <div class="d-flex flex-lg-column">
                   <div class="form-check">
                     <input
                       class="form-check-input"
                       type="checkbox"
                       value=""
-                      id="flexCheckChecked"
+                      id="flexCheckChecked34"
                     />
-                    <label class="form-check-label" for="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked34">
                       İstanbul
                     </label>
                   </div>
@@ -139,78 +115,22 @@
                       class="form-check-input"
                       type="checkbox"
                       value=""
-                      id="flexCheckChecked"
+                      id="flexCheckChecked35"
                     />
-                    <label class="form-check-label" for="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked35">
                       İzmir
                     </label>
                   </div>
                 </div>
               </div>
 
-              <div class="d-flex flex-column p-3 border-top">
-                <p><strong>Değerlendirme Puanı</strong></p>
-                <div class="row justify-content-center align-items-center g-2">
-                  <div class="col">
-                    <div class="check-list">
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault1"
-                        />
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          <i class="bi bi-star-fill"></i>
-                          <span>4 yıldız ve üzeri</span>
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault1"
-                        />
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          <i class="bi bi-star-fill"></i>
-                          <span>3 yıldız ve üzeri</span>
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault1"
-                        />
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          <i class="bi bi-star-fill"></i>
-                          <span>2 yıldız ve üzeri</span>
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault1"
-                        />
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          <i class="bi bi-star-fill"></i>
-                          <span>1 yıldız ve üzeri</span>
-                        </label>
-                      </div>
-                    </div>
-                  </div>
+              <div class="d-flex p-3 border-top">
+                <div>
+                  <b style="width: max-content; display: block"
+                    >Yarın Kapında</b
+                  >
                 </div>
-              </div>
-
-              <div
-                class="d-flex p-3 border-top"
-              >
-                <div class="col-6 kupon" style="width: max-content;">Yarın Kapında</div>
-                <div class="col form-check form-switch">
+                <div class="form-check form-switch">
                   <input
                     class="form-check-input"
                     type="checkbox"
@@ -223,66 +143,34 @@
                   ></label>
                 </div>
               </div>
-              <div class="d-flex flex-column p-3 border-top">
-                <p><strong>Kelime Filtresi</strong></p>
-                <div class="justify-content-center align-items-center g-2">
-                  <div class=" d-flex">
-                    <div class="radio-area">
-                      <input
-                        type="text"
-                        class="form-control d-flex"
-                        name=""
-                        id=""
-                        placeholder="Ara"
-                      />
-                    </div>
-                    <div class=" radio-area">
-                      <a href="#" class="btn btn-outline-secondary">
-                        <i class="bi bi-check-square"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
-          <div id="list-area" class="col-10 mx-auto">
-            <div class="row justify-content-center align-items-center">
-              <div class="col-11 d-flex justify-content-center kayan-buton">
-                <div class="container text-left d-flex my-3 slider">
-                  <p class="h5 text-truncate"><strong>Ekran Kartı</strong><p> ile ilgili <strong>10.000+</strong> ürün bulduk</p></p>
-                  <div class="row mx-auto my-auto justify-content-center">
-
+          <div class="w-100">
+            <div class="justify-content-center align-items-center">
+              <div class="d-flex justify-content-center w-100">
+                <div
+                  class="text-left d-flex justify-content-between align-items-center w-100"
+                >
+                  <div
+                    class="d-flex gap-2 justify-content-center align-items-center"
+                  >
+                    <p class="text-truncate m-0">
+                      <strong id="search-item">Bilinmiyor</strong>
+                      ile ilgili <strong id="search-item-count">0</strong> ürün
+                      bulduk.
+                    </p>
+                  </div>
+                  <div class="my-auto justify-content-center">
                     <div class="btn-group d-flex order-button">
-                      <button
-                        class="btn dropdown-toggle"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        data-bs-auto-close="outside"
-                        aria-expanded="false"
-                      >
+                      <button class="btn dropdown-toggle" type="button">
                         Sıralama
                       </button>
-                      <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="#">Artan fiyat</a></li>
-                        <li><a class="dropdown-item" href="#">Azalan fiyat</a></li>
-                        <li><a class="dropdown-item" href="#">Çok satanlar</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Çok değerlendirilenler</a>
-                        </li>
-                        <li><a class="dropdown-item" href="#">Yüksek puanlılar</a></li>
-                        <li><a class="dropdown-item" href="#">İndirim oranı</a></li>
-                        <li><a class="dropdown-item" href="#">Yeni eklenenler</a></li>
-                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div
-              class="row justify-content-center align-items-center my-4 mx-2 gap-2"
-              id="laptop-content"
-            ></div>
+            <div class="my-3 gap-2 d-flex flex-wrap" id="search-products"></div>
           </div>
         </div>
         <hr />
@@ -298,141 +186,6 @@
     <!-- content -->
     <footer>
       <div class="container">
-        <div class="footer-description" id="footerdesc">
-          <p>
-            <strong>Alışveriş Fırsatları</strong> <br />
-            Alışveriş fırsatlarıTürkiye'nin en büyük online alışveriş sitesi
-            Hepsiburada, 2001 yılından bu yana hizmet veriyor. Doğan Holding
-            bünyesinde faaliyet gösteren Hepsiburada, yenilikleri ile
-            Türkiye'nin dijital alışveriş sektörüne yön veriyor. Online
-            alışveriş deneyimini her geçen gün daha kolay hale getiren,
-            dijitalleşen dünyanın gereklerine uygun geliştirmelerle sunduğu
-            hizmetleri daha da avantajlı kılan Hepsiburada, ziyaretçilerine bol
-            çeşit, uygun fiyat, hızlı teslimat ve sürpriz indirimler sunuyor.
-            Bugün 35'ten fazla kategori içinde 20 milyondan fazla ürün çeşidi
-            bulunduran site, 16 milyondan fazla üye ile Türkiye'de e-ticaretin
-            lideri olmanın gururunu yaşıyor.<span id="more"
-              ><strong>Devamını Gör</strong></span
-            >
-          </p>
-
-          <p>
-            <strong>Teknolojnin En İyi Markaları Hepsiburada'da</strong> <br />
-            Hepsiburada'un avantajlarla sunduğu elektronik ürünler içinde
-            bilgisayar modellerinden cep telefonu ürünlerine, bluetooth kulaklık
-            tasarımlarından laptop seçeneklerine, tablet çeşitlerinden akıllı
-            saat ürünlerine kadar birçok alternatif yer alıyor. En iyi teknoloji
-            markaları, özel ürünleri ve avantajlı ödeme seçenekleri ile
-            Hepsiburada'da müşterilerle buluşuyor. Dünyanın en ünlü elektronik
-            markalarından Apple iPhone, Huawei, Samsung ve Xiaomi telefon
-            modelleri, beyaz eşyanın gözdeleri çamaşır ve bulaşık makineleri,
-            küçük ev aletleri sitede sizleri bekliyor. Arnica süpürgelerden
-            Hisar Tencere setlerine, Fakir mikser de dahil olmak üzere evinizin
-            ihtiyacı bir çok seçenek Hepsiburada'da. Hayatı kolaylaştıran en iyi
-            klima modelleri, sıcacık kışlar için soba ve UFO ısıtıcı çeşitleri
-            de elektronikler içinde yer alıyor. Ayrıca PlayStation ve benzeri
-            oyun konsolu alternatifleri ile en popüler konsol oyunları da
-            oyunseverleri bekliyor.
-          </p>
-
-          <p>
-            <strong>Modanın Nabzını Tutan Tasarımlar Bir Arada</strong> <br />
-            Hepsiburada modayı yakından takip edenlerin de gözdesi.Hepsimoda
-            kategorisinde kadın, erkek, çocuk ve bebek kıyafetlerinin yanı sıra
-            ayakkabı, çanta ve aksesuarları sunan site, moda trendlerini
-            kullanıcılarına sunuyor. Giyim ihtiyaçlarını en trend ürünleri
-            sunarak karşılayan Hepsiburada, günlük giyim alternatiflerinden
-            abiyelere, spor giyimden ofis kıyafetlerine kadar farklı ihtiyaçlar
-            için çeşit vadediyor. Türkiye'nin ve dünyanın sevilen giyim
-            markaları en yeni ürünleriyle sezon modasını gardırobunuza taşıyor.
-            Kışlık kadın kaban seçeneklerinden kazaklara, kadın çizme
-            tasarımlarından topuklu ayakkabı modellerine, tesettür giyim
-            ürünlerinden abiye elbise tasarımlarına kadar aradığınız her şeyi
-            Hepsimoda'da bulabilirsiniz. Hepsiburada'nın her bütçeye, her zevke
-            uygun giyim ürünleri arasından hem kendi ihtiyaçlarınızı
-            karşılayabilir hem de sevdiklerinize hediye alabilirsiniz. Kadın
-            ayakkabı ve erkek spor ayakkabı modellerinde zengin ürün yelpazesi
-            sunan Hepsiburada, çocukların ihtiyaçları için de doğru adres.
-          </p>
-
-          <p>
-            <strong>Evinizi ve İş Yerinizi Baştan Yaratın</strong> <br />
-            Eviniz ve ofisiniz için ihtiyaç duyduğunuz her şeyi bir arada
-            bulabileceğiniz Hepsiburada aracılığıyla ev dekorasyon ve ofis
-            dekorasyon ürünlerinden ev tekstili tasarımlarına, kırtasiye
-            malzemelerinden okul alışverişi için gerekli olan defter ve
-            kalemlere kadar her şeyi sipariş verebilirsiniz.Ofis kırtasiye
-            gereçlerini hem kendiniz hem de çocuklarınız ve sevdikleriniz için
-            alabilirsiniz. Evinizi baştan yaratacak mobilyalardan çocuklarınıza
-            resim yapmayı sevdirecek renkli kalemlere kadar her şeyiHepsiburada
-            avantajlarıyla bulabilirsiniz.
-          </p>
-          <p>
-            <strong>Aradığınız Yapı Ürünleri Burada</strong> <br />
-            Yapı market ihtiyaçlarınızı birkaç tık ile karşılayabilir, lastik
-            modellerinden otomotiv parçalarına, hırdavat ve nalbur ürünlerinden
-            bahçe gereklerine kadar her şeyi kolaylıkla sipariş edebilirsiniz.
-            Arabanız için tampon arıyor veya sadece bir jant veya araç içi
-            paspas almak istiyor olabilirsiniz, adresiniz aynı. Hepsiburada,
-            büyük küçük tüm ihtiyaçlarınız için hizmetinizde. Kış lastiği mi
-            almanız gerek, aradığınız dünyaca ünlü markalar avantajlarla
-            kapınızda. Petlas lastik ürünleri, Bridgestone lastik alternatifleri
-            aracınıza uygun çeşitlerle seçimi size bırakıyor.Dilerseniz Pirelli
-            lastik, Lassa lastik ya da Michelin lastik seçeneklerini de
-            değerlendirebilirsiniz. Hepsiburada, sürüş deneyiminizi maksimum
-            rahatlığa ulaştıracak navigasyon sistemleri, araç radyoları ve TV
-            ekranlarını da geniş ürün gamında bulunduruyor.
-          </p>
-
-          <p>
-            <strong>Annelerin de Çocukların da Gözdesi</strong> <br />
-            Annelerin ve anne adaylarının ihtiyaçlarına yanıt veren ürünler
-            arasında ana kucağı, emzik, biberon, bebek arabası, bebek bakımı
-            ürünleri ve çeşit çeşit oyuncak yer alıyor.Anne babaların hayat
-            kolaylaştırmak üzere tasarlanan ürünlerden, siz de çocuğunuz ve
-            kendiniz için en iyisini sipariş verebilirsiniz. Bebeklikten
-            çocukluğu ve ergenliğe kadar çocuklar için yaşa özel ürünler,
-            Hepsiburada'da bir arada bulunuyor. Hepsiburada, Prima bebek bezi
-            veya Huggies bebek bezi çeşitlerini avantajlı kampanyalarla
-            Hepsiburada'da bulabilir, farklı ürünleri kıyaslayabilir, seçiminizi
-            yapabilirsiniz.
-          </p>
-
-          <p>
-            <strong>Sporu Sevdiren Tasarımlar</strong> <br />
-            Spora hayatında yer açmak isteyenlerin seçimi olan Spor & Outdoor
-            kategorisi, hem kadın hem de erkeklerin farklı branşlar için ihtiyaç
-            duyacağı malzemeleri ve spor giyim ürünlerini bir arada
-            bulunduruyor. Tenis, yürüyüş, koşu veya takım oyunları için gerek
-            duyduğunuz tüm spor ekipmanları Hepsiburada'da sizleri bekliyor.
-            Elektrikli bisikletten olta kamışına, ilgilendiğiniz spor dalında
-            performansınızı artırmak için profesyonel ürünlerden destek
-            alabilirsiniz. Outdoor mont ve outdoor ayakkabı tasarımlarını doğa
-            sporları yaparken ya da yağışlı kış günlerinde tercih edebilirsiniz.
-            Kamp için aradığınız çadır modelleri, koşu için almak istediğiniz
-            spor ayakkabı tasarımları, pilates seanslarınıza konfor katan matlar
-            tek reyonda sizlerle...
-          </p>
-
-          <p>
-            <strong>Bakımlı Olmak İçin Aradığınız Her Şey</strong> <br />
-            Kadın ve erkeklerin kişisel bakım rutinini kolaylaştıracak binlerce
-            ürün bir arada. Cilt temizleyici kozmetik ürünlerden sağlık
-            araçlarına, hayatınıza güzellik katacak makyaj malzemelerinden
-            parfüm ve deodorantlara kadar banyo dolabınızın tüm ihtiyaçlarını
-            Hepsiburada ayrıcalıklarıyla satın alabilirsiniz. Hepsiburada, cilt
-            tipinize uygun alternatifler, bütçenizi sarsmayan çeşitler, en
-            kaliteli ve seçkin markalar ile sizin de güzellik sırrınız olmaya
-            hazırlanıyor. Calvin Klein parfüm çeşitleri içinde aradığınız kokuyu
-            bulabilirsiniz. Bulgari parfüm çeşitlerini inceleyebilir veya
-            ünlülerin tercihi Chanel parfüm seçenekleri arasından seçim yaparak
-            imzanız olacak parfüme sahip olabilirsiniz.<br />
-            <span id="less">
-              <strong>Devamını Gizle</strong>
-            </span>
-          </p>
-        </div>
-
         <div class="footer-features-body">
           <div class="footer-features">
             <div class="footerFeatures-images">
@@ -670,7 +423,7 @@
             <span>Mobil Uygulamalar</span>
             <div class="mobileAppBox">
               <div class="mobileApp-text">
-                <i class="bi bi-phone"></i>
+                <i class="bi bi-apple"></i>
                 <div class="mb-app-spans">
                   <span>APP STORE'dan</span>
                   <span>İNDİREBİLİRSİNİZ</span>
@@ -685,7 +438,7 @@
                 </div>
               </div>
               <div class="mobileApp-text">
-                <i class="bi bi-apple"></i>
+                <i class="bi bi-phone"></i>
                 <div class="mb-app-spans">
                   <span>APP GALLERY'den</span>
                   <span>İNDİREBİLİRSİNİZ</span>
@@ -770,8 +523,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="../../js/footer.js"></script>
-    <script src="../../js/banklogos.js"></script>
     <script src="../../js/index.js"></script>
+    <script src="index.js"></script>
+    <script src="../../js/banklogos.js"></script>
   </body>
 </html>

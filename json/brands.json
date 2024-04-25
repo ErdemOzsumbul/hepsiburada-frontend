@@ -1,22 +1,17 @@
 [
   {
-    "imageSrc": "images/brands/acer.jpeg",
-    "altText": ""
+    "src": "images/brands/acer.jpeg"
   },
   {
-    "imageSrc": "images/brands/electrolux.jpeg",
-    "altText": ""
+    "src": "images/brands/electrolux.jpeg"
   },
   {
-    "imageSrc": "images/brands/grundig.jpeg",
-    "altText": ""
+    "src": "images/brands/grundig.jpeg"
   },
   {
-    "imageSrc": "images/brands/hummel.jpeg",
-    "altText": ""
+    "src": "images/brands/hummel.jpeg"
   },
   {
-    "imageSrc": "images/brands/mavi.jpeg",
-    "altText": ""
+    "src": "images/brands/mavi.jpeg"
   }
 ]

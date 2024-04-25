@@ -1,5 +1,7 @@
 (async () => {
-  const res = await axios.get("/json/hero-slider.json");
+  const res = await axios.get(
+    window.location.origin + "/json/hero-slider.json"
+  );
 
   function changePicture(item) {
     const title = document.getElementById("heroTitle");

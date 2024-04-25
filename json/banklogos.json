@@ -1,61 +1,61 @@
 [
   {
-    "imageSrc": "https://images.hepsiburada.net/assets/footer-sf/bonus-new.svg",
+    "src": "https://images.hepsiburada.net/assets/footer-sf/bonus-new.svg",
     "height": 12,
     "width": 76
   },
   {
-    "imageSrc": "https://images.hepsiburada.net/assets/footer-sf/maximum-new.svg",
+    "src": "https://images.hepsiburada.net/assets/footer-sf/maximum-new.svg",
     "height": 16,
     "width": 62
   },
   {
-    "imageSrc": "https://images.hepsiburada.net/assets/footer-sf/world-new.svg",
+    "src": "https://images.hepsiburada.net/assets/footer-sf/world-new.svg",
     "height": 18,
     "width": 62
   },
   {
-    "imageSrc": "https://images.hepsiburada.net/assets/footer-sf/ziraat-new.svg",
+    "src": "https://images.hepsiburada.net/assets/footer-sf/ziraat-new.svg",
     "height": 17,
     "width": 58
   },
   {
-    "imageSrc": "https://images.hepsiburada.net/assets/footer-sf/finans-new.svg",
+    "src": "https://images.hepsiburada.net/assets/footer-sf/finans-new.svg",
     "height": 11,
     "width": 64
   },
   {
-    "imageSrc": "https://images.hepsiburada.net/assets/footer-sf/axess-new-3.svg",
+    "src": "https://images.hepsiburada.net/assets/footer-sf/axess-new-3.svg",
     "height": 13,
     "width": 43
   },
   {
-    "imageSrc": "https://images.hepsiburada.net/assets/footer-sf/advantage-new.svg",
+    "src": "https://images.hepsiburada.net/assets/footer-sf/advantage-new.svg",
     "height": 12,
     "width": 67
   },
   {
-    "imageSrc": "https://images.hepsiburada.net/assets/footer-sf/paraf-new.svg",
+    "src": "https://images.hepsiburada.net/assets/footer-sf/paraf-new.svg",
     "height": 20,
     "width": 32
   },
   {
-    "imageSrc": "https://images.hepsiburada.net/assets/footer-sf/visa.svg",
+    "src": "https://images.hepsiburada.net/assets/footer-sf/visa.svg",
     "height": 18,
     "width": 51
   },
   {
-    "imageSrc": "https://images.hepsiburada.net/assets/footer-sf/mastercard.svg",
+    "src": "https://images.hepsiburada.net/assets/footer-sf/mastercard.svg",
     "height": 19,
     "width": 31
   },
   {
-    "imageSrc": "https://images.hepsiburada.net/assets/footer-sf/ae.svg",
+    "src": "https://images.hepsiburada.net/assets/footer-sf/ae.svg",
     "height": 28,
     "width": 27
   },
   {
-    "imageSrc": "https://images.hepsiburada.net/assets/footer-sf/troy.svg",
+    "src": "https://images.hepsiburada.net/assets/footer-sf/troy.svg",
     "height": 21,
     "width": 42
   }
